@@ -1,0 +1,116 @@
+{
+  "result_count": 1,
+  "version": 1.01,
+  "last_updated_epoch": 1494460800,
+  "created_epoch": 1494460800,
+  "Auth": {
+    "jobroles": [
+      {
+        "role_name": "Referral Management",
+        "activities": [
+          {
+            "name": "READ_REFERRAL",
+            "actions": [
+              {
+                "Action": "create",
+                "conditions": [
+                  "all",
+                  "companyRegion=employeeRegion",
+                  "dept =sales"
+                ]
+              },
+              {
+                "Action": "read",
+                "conditions": [
+                  "*",
+                  "companyRegion=employeeRegion"
+                ]
+              },
+              {
+                "Action": "update",
+                "conditions": [
+                  "Any",
+                  "companyRegion=employeeRegion"
+                ]
+              },
+              {
+                "Action": "delete",
+                "conditions": [
+                  "Any",
+                  "companyRegion=employeeRegion"
+                ]
+              },
+              {
+                "Action": "print",
+                "conditions": [
+                  "Any",
+                  "companyRegion=employeeRegion"
+                ]
+              },
+              {
+                "Action": "share",
+                "conditions": [
+                  "Any",
+                  "companyRegion=employeeRegion"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "DELETE_REFERRAL",
+            "actions": [
+              {
+                "Action": "create",
+                "conditions": [
+                  "all",
+                  "companyRegion=employeeRegion",
+                  "dept =sales"
+                ]
+              },
+              {
+                "Action": "read",
+                "conditions": [
+                  "*",
+                  "companyRegion=employeeRegion"
+                ]
+              },
+              {
+                "Action": "print",
+                "conditions": [
+                  "Any",
+                  "companyRegion=employeeRegion"
+                ]
+              },
+              {
+                "Action": "share",
+                "conditions": [
+                  "Any",
+                  "companyRegion=employeeRegion"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "activity_names": [
+      {
+        "name": "READ_REFERRAL"
+      },
+      {
+        "name": "DELETE_REFERRAL"
+      },
+      {
+        "name": "READ_NPI"
+      }
+    ],
+    "role_names": [
+      {
+        "name": "Referral Management"
+      },
+      {
+        "name": "Provider Credentialing"
+      }
+    ]
+  }
+}
